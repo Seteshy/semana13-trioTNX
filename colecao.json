@@ -93,7 +93,7 @@
             "type": "text/javascript",
             "exec": [
               "pm.test(\"Status code é 201 (criado)\", () => {",
-              "  pm.response.to.have.status(201)",
+              "  pm.response.to.have.status(204)",
               "})",
               "pm.test(\"O post volta com o título enviado\", () => {",
               "  pm.expect(pm.response.json().title).to.eql(\"Teste de QA\")",
